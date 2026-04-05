@@ -1,0 +1,54 @@
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --radius: 0.5rem;
+    --background: 0.11 0.012 255;
+    --foreground: 0.97 0 0;
+    --card: 0.14 0.016 255;
+    --card-foreground: 0.97 0 0;
+    --popover: 0.14 0.016 255;
+    --popover-foreground: 0.97 0 0;
+    --primary: 0.845 0.18 118;
+    --primary-foreground: 0.1 0.01 255;
+    --secondary: 0.18 0.02 255;
+    --secondary-foreground: 0.97 0 0;
+    --muted: 0.18 0.02 255;
+    --muted-foreground: 0.55 0.02 255;
+    --accent: 0.22 0.025 255;
+    --accent-foreground: 0.97 0 0;
+    --destructive: 0.55 0.22 25;
+    --destructive-foreground: 0.97 0 0;
+    --border: 0.22 0.025 255;
+    --input: 0.18 0.02 255;
+    --ring: 0.845 0.18 118;
+    --chart-1: 0.845 0.18 118;
+    --chart-2: 0.55 0.22 25;
+    --chart-3: 0.5 0.15 200;
+    --chart-4: 0.7 0.18 80;
+    --chart-5: 0.6 0.2 40;
+    --sidebar: 0.14 0.016 255;
+    --sidebar-foreground: 0.97 0 0;
+    --sidebar-primary: 0.845 0.18 118;
+    --sidebar-primary-foreground: 0.1 0.01 255;
+    --sidebar-accent: 0.22 0.025 255;
+    --sidebar-accent-foreground: 0.97 0 0;
+    --sidebar-border: 0.22 0.025 255;
+    --sidebar-ring: 0.845 0.18 118;
+  }
+
+  * {
+    @apply border-border;
+  }
+  html {
+    color-scheme: dark;
+  }
+  body {
+    @apply bg-background text-foreground;
+    overscroll-behavior: none;
+  }
+}
